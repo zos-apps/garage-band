@@ -1,0 +1,110 @@
+{
+  "name": "@zos-apps/garage-band",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "zos": {
+    "id": "ai.hanzo.garage-band",
+    "name": "GarageBand",
+    "icon": "🎸",
+    "category": "creative",
+    "description": "Create music with virtual instruments",
+    "permissions": [
+      "audio",
+      "microphone"
+    ],
+    "window": {
+      "defaultSize": {
+        "width": 1100,
+        "height": 700
+      },
+      "resizable": true
+    },
+    "featured": true,
+    "tags": [
+      "music",
+      "audio",
+      "instruments",
+      "creative"
+    ],
+    "about": "Create music with virtual instruments and audio recording.",
+    "help": [
+      "Choose a template",
+      "Add tracks",
+      "Record or use loops",
+      "Export your song"
+    ],
+    "docs": "https://zos-apps.github.io/garage-band",
+    "site": "https://github.com/zos-apps/garage-band",
+    "features": [
+      "Virtual instruments",
+      "Audio recording",
+      "Loop library",
+      "Drummer",
+      "Effects"
+    ],
+    "shortcuts": [
+      "Space Play/Stop",
+      "R Record",
+      "⌘T New track"
+    ],
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-main.png",
+        "screenshots/2-feature.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/garage-band"
+    },
+    "releaseDate": "2024-12-31",
+    "support": "https://github.com/zos-apps/garage-band/issues",
+    "changelog": "https://github.com/zos-apps/garage-band/releases"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@zos-apps/config": "workspace:*",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "description": "Create music with virtual instruments",
+  "homepage": "https://zos-apps.github.io/garage-band",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/garage-band.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/garage-band/issues"
+  },
+  "keywords": [
+    "zos",
+    "app",
+    "garage-band",
+    "music",
+    "audio",
+    "instruments",
+    "creative"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
